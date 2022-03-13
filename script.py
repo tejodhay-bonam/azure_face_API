@@ -1,6 +1,6 @@
 '''
 Face Detection using Azure Cognitive Services
-Demonstration link - https://youtu.be/e0xqMmpjYL8
+
 
 Environment Information:
 -----------------------
@@ -19,8 +19,8 @@ from msrest.authentication import CognitiveServicesCredentials
 
 import threading
 
-subscription_key="YOUR_SUBSCRIPTION_KEY"
-endpoint="YOUR_ENDPOINT"
+subscription_key="14769ccb9806491da326497ae86174ce"
+endpoint="https://livefaceemotions.cognitiveservices.azure.com/"
 face_client=FaceClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
 class FaceDetector(threading.Thread):
